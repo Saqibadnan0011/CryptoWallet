@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		186599592B166B2000EBC40B /* CrytoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186599582B166B2000EBC40B /* CrytoWalletApp.swift */; };
+		186599592B166B2000EBC40B /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186599582B166B2000EBC40B /* CryptoWalletApp.swift */; };
 		1865995B2B166B2000EBC40B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865995A2B166B2000EBC40B /* ContentView.swift */; };
 		186599602B166B2300EBC40B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1865995F2B166B2300EBC40B /* Preview Assets.xcassets */; };
 		186599672B166E3100EBC40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186599662B166E3100EBC40B /* Assets.xcassets */; };
 		1865996A2B167A6A00EBC40B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186599692B167A6A00EBC40B /* Color.swift */; };
+		186599702B167FF800EBC40B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865996F2B167FF800EBC40B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		186599552B166B2000EBC40B /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		186599582B166B2000EBC40B /* CrytoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoWalletApp.swift; sourceTree = "<group>"; };
+		186599582B166B2000EBC40B /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		1865995A2B166B2000EBC40B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1865995F2B166B2300EBC40B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		186599662B166E3100EBC40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		186599692B167A6A00EBC40B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1865996F2B167FF800EBC40B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 		186599572B166B2000EBC40B /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				1865996B2B167FAD00EBC40B /* Core */,
 				186599682B167A3C00EBC40B /* Extension */,
-				186599582B166B2000EBC40B /* CrytoWalletApp.swift */,
+				186599582B166B2000EBC40B /* CryptoWalletApp.swift */,
 				1865995A2B166B2000EBC40B /* ContentView.swift */,
 				186599662B166E3100EBC40B /* Assets.xcassets */,
 				1865995E2B166B2300EBC40B /* Preview Content */,
@@ -76,6 +79,38 @@
 				186599692B167A6A00EBC40B /* Color.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1865996B2B167FAD00EBC40B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1865996C2B167FB500EBC40B /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1865996C2B167FB500EBC40B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1865996E2B167FCB00EBC40B /* ViewModel */,
+				1865996D2B167FC200EBC40B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1865996D2B167FC200EBC40B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1865996F2B167FF800EBC40B /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1865996E2B167FCB00EBC40B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1865995B2B166B2000EBC40B /* ContentView.swift in Sources */,
-				186599592B166B2000EBC40B /* CrytoWalletApp.swift in Sources */,
+				186599702B167FF800EBC40B /* HomeView.swift in Sources */,
+				186599592B166B2000EBC40B /* CryptoWalletApp.swift in Sources */,
 				1865996A2B167A6A00EBC40B /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +314,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CrytoWallet/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoWallet/Preview Content\"";
 				DEVELOPMENT_TEAM = 9872Q3S934;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -311,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CrytoWallet/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoWallet/Preview Content\"";
 				DEVELOPMENT_TEAM = 9872Q3S934;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
