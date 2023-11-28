@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		186599592B166B2000EBC40B /* CrytoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186599582B166B2000EBC40B /* CrytoWalletApp.swift */; };
 		1865995B2B166B2000EBC40B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865995A2B166B2000EBC40B /* ContentView.swift */; };
-		1865995D2B166B2300EBC40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1865995C2B166B2300EBC40B /* Assets.xcassets */; };
 		186599602B166B2300EBC40B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1865995F2B166B2300EBC40B /* Preview Assets.xcassets */; };
+		186599672B166E3100EBC40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186599662B166E3100EBC40B /* Assets.xcassets */; };
+		1865996A2B167A6A00EBC40B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186599692B167A6A00EBC40B /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		186599552B166B2000EBC40B /* CrytoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186599552B166B2000EBC40B /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186599582B166B2000EBC40B /* CrytoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoWalletApp.swift; sourceTree = "<group>"; };
 		1865995A2B166B2000EBC40B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1865995C2B166B2300EBC40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1865995F2B166B2300EBC40B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		186599662B166E3100EBC40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		186599692B167A6A00EBC40B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +37,7 @@
 		1865994C2B166B2000EBC40B = {
 			isa = PBXGroup;
 			children = (
-				186599572B166B2000EBC40B /* CrytoWallet */,
+				186599572B166B2000EBC40B /* CryptoWallet */,
 				186599562B166B2000EBC40B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +45,21 @@
 		186599562B166B2000EBC40B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				186599552B166B2000EBC40B /* CrytoWallet.app */,
+				186599552B166B2000EBC40B /* CryptoWallet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		186599572B166B2000EBC40B /* CrytoWallet */ = {
+		186599572B166B2000EBC40B /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				186599682B167A3C00EBC40B /* Extension */,
 				186599582B166B2000EBC40B /* CrytoWalletApp.swift */,
 				1865995A2B166B2000EBC40B /* ContentView.swift */,
-				1865995C2B166B2300EBC40B /* Assets.xcassets */,
+				186599662B166E3100EBC40B /* Assets.xcassets */,
 				1865995E2B166B2300EBC40B /* Preview Content */,
 			);
-			path = CrytoWallet;
+			path = CryptoWallet;
 			sourceTree = "<group>";
 		};
 		1865995E2B166B2300EBC40B /* Preview Content */ = {
@@ -67,12 +70,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		186599682B167A3C00EBC40B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				186599692B167A6A00EBC40B /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		186599542B166B2000EBC40B /* CrytoWallet */ = {
+		186599542B166B2000EBC40B /* CryptoWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 186599632B166B2300EBC40B /* Build configuration list for PBXNativeTarget "CrytoWallet" */;
+			buildConfigurationList = 186599632B166B2300EBC40B /* Build configuration list for PBXNativeTarget "CryptoWallet" */;
 			buildPhases = (
 				186599512B166B2000EBC40B /* Sources */,
 				186599522B166B2000EBC40B /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = CrytoWallet;
+			name = CryptoWallet;
 			productName = CrytoWallet;
-			productReference = 186599552B166B2000EBC40B /* CrytoWallet.app */;
+			productReference = 186599552B166B2000EBC40B /* CryptoWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 186599502B166B2000EBC40B /* Build configuration list for PBXProject "CrytoWallet" */;
+			buildConfigurationList = 186599502B166B2000EBC40B /* Build configuration list for PBXProject "CryptoWallet" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				186599542B166B2000EBC40B /* CrytoWallet */,
+				186599542B166B2000EBC40B /* CryptoWallet */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186599602B166B2300EBC40B /* Preview Assets.xcassets in Resources */,
-				1865995D2B166B2300EBC40B /* Assets.xcassets in Resources */,
+				186599672B166E3100EBC40B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				1865995B2B166B2000EBC40B /* ContentView.swift in Sources */,
 				186599592B166B2000EBC40B /* CrytoWalletApp.swift in Sources */,
+				1865996A2B167A6A00EBC40B /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +282,12 @@
 				DEVELOPMENT_TEAM = 9872Q3S934;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +295,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codewithsaqib.CrytoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,11 +315,12 @@
 				DEVELOPMENT_TEAM = 9872Q3S934;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +328,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codewithsaqib.CrytoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		186599502B166B2000EBC40B /* Build configuration list for PBXProject "CrytoWallet" */ = {
+		186599502B166B2000EBC40B /* Build configuration list for PBXProject "CryptoWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				186599612B166B2300EBC40B /* Debug */,
@@ -329,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		186599632B166B2300EBC40B /* Build configuration list for PBXNativeTarget "CrytoWallet" */ = {
+		186599632B166B2300EBC40B /* Build configuration list for PBXNativeTarget "CryptoWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				186599642B166B2300EBC40B /* Debug */,
