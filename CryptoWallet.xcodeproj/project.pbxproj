@@ -84,6 +84,7 @@
 		1865996B2B167FAD00EBC40B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				186599712B16831D00EBC40B /* Components */,
 				1865996C2B167FB500EBC40B /* Home */,
 			);
 			path = Core;
@@ -111,6 +112,13 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		186599712B16831D00EBC40B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
