@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var showProtfolio: Bool = false
+    
     var body: some View {
         ZStack {
             Color.theme.background
                 .ignoresSafeArea()
             
             VStack {
-                Text("Crypto Wallet")
+                HStack {
+                    CircleButtonView(iconName: "info")
+                    Spacer()
+                    Text("Live Price")
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.theme.accent)
+                    Spacer()
+                    CircleButtonView(iconName: "chevron.right")
+                        .rotationEffect(Angle(degrees: showProtfolio ? 180 : 0))
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                showProtfolio.toggle()
+                            }
+                        }
+                    
+                }
+                .padding(.horizontal)
                 Spacer()
             }
         }
