@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18024AA82B19135200882B78 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18024AA72B19135100882B78 /* CircleButtonView.swift */; };
 		186599592B166B2000EBC40B /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186599582B166B2000EBC40B /* CryptoWalletApp.swift */; };
 		1865995B2B166B2000EBC40B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865995A2B166B2000EBC40B /* ContentView.swift */; };
 		186599602B166B2300EBC40B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1865995F2B166B2300EBC40B /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18024AA72B19135100882B78 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		186599552B166B2000EBC40B /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186599582B166B2000EBC40B /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		1865995A2B166B2000EBC40B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		186599712B16831D00EBC40B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				18024AA72B19135100882B78 /* CircleButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				1865995B2B166B2000EBC40B /* ContentView.swift in Sources */,
 				186599702B167FF800EBC40B /* HomeView.swift in Sources */,
 				186599592B166B2000EBC40B /* CryptoWalletApp.swift in Sources */,
+				18024AA82B19135200882B78 /* CircleButtonView.swift in Sources */,
 				1865996A2B167A6A00EBC40B /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
