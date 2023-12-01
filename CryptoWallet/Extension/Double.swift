@@ -8,15 +8,54 @@
 import Foundation
 
 extension Double {
-    
+
+    ///Convert Double into a currency with 2-6 decimal places
+    /// ```
+    /// Convert 4567.89 to $4,567.89
+    /// Convert 45.6789 to $45,6789
+    /// Convert 0.456789 to $0.456789
+    /// ```
+
     private var currencyFormatter6: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
-        formatter.locale = .current
-        formatter.currencyCode = "usd"
-        formatter.currencySymbol = "$"
+        //formatter.locale = .current
+        //formatter.currencyCode = "usd"
+        //formatter.currencySymbol = "$"
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 6
         
         return formatter
+    }
+    
+    ///Convert Double into a currency as a String with 2-6 decimal places
+    /// ```
+    /// Convert 4567.89 to "$4,567.89"
+    /// Convert 45.6789 to "$45,6789"
+    /// Convert 0.456789 to "$0.456789"
+    /// ```
+    
+    func asCurrencyWith6Decimals() -> String {
+        let number = NSNumber(value: self)
+        return currencyFormatter6.string(from: number) ?? "$0.00"
+    }
+    
+    ///Convert Double into a String presentation
+    /// ```
+    /// Convert 4.56789 to "4.56"
+    /// ```
+    
+    func asNumberString() -> String {
+        return String(format: "%.2f", self)
+    }
+    
+    ///Convert Double into a String presentation percent symbol
+    /// ```
+    /// Convert 4.56789 to "4.56%"
+    /// ```
+    
+    func asPercentString() -> String {
+        return asNumberString() + "%"
     }
 }
