@@ -19,3 +19,4 @@ struct ColorTheme {
     let dark = Color("DarkGreen")
     let secondaryText = Color("SecondaryTextColor")
 }
+
