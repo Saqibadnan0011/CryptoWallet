@@ -8,6 +8,34 @@
 import Foundation
 
 extension Double {
+    
+    ///Convert Double into a currency with 2 decimal places
+    /// ```
+    /// Convert 4567.89 to $4,567.89
+    /// ```
+
+    private var currencyFormatter2: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.usesGroupingSeparator = true
+        formatter.numberStyle = .currency
+        //formatter.locale = .current
+        //formatter.currencyCode = "usd"
+        //formatter.currencySymbol = "$"
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        
+        return formatter
+    }
+    
+    ///Convert Double into a currency as a String with 2 decimal places
+    /// ```
+    /// Convert 4567.89 to "$4,567.89"
+    /// ```
+    
+    func asCurrencyWith2Decimals() -> String {
+        let number = NSNumber(value: self)
+        return currencyFormatter2.string(from: number) ?? "$0.00"
+    }
 
     ///Convert Double into a currency with 2-6 decimal places
     /// ```
