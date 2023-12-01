@@ -18,7 +18,7 @@ import Foundation
      "symbol": "btc",
      "name": "Bitcoin",
      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
-     "current_price": 37792,
+     "c": 37792,
      "market_cap": 739082829935,
      "market_cap_rank": 1,
      "fully_diluted_valuation": 793604924280,
@@ -51,6 +51,58 @@ import Foundation
    },
  */
 
-class CoinModel {
+struct CoinModel: Identifiable, Codable {
+    let id, symbol, name: String
+    let image: String
+    let currentPrice: Double
+    let marketCap, marketCapRank, fullyDilutedValuation: Double?
+    let totalVolume, high24H, low24H: Double?
+    let priceChange24H, priceChangePercentage24H: Double?
+    let marketCapChange24H: Double?
+    let marketCapChangePercentage24H: Double?
+    let circulatingSupply, totalSupply, maxSupply, ath: Double?
+    let athChangePercentage: Double?
+    let athDate: String?
+    let atl, atlChangePercentage: Double?
+    let atlDate: String?
+    let lastUpdated: String?
+    let sparkLineIn7D: SparkLineIn7D?
+    let priceChangePercentage24HInCurrency: Double?
+    let currentHoldings: Double?
     
+    enum CodingKeys: String, CodingKey {
+        case id, symbol, name, image
+        case currentPrice = "currentPrice"
+        case marketCap = "market_cap"
+        case marketCapRank = "market_cap_rank"
+        case fullyDilutedValuation = "fully_diluted_valuation"
+        case totalVolume = "total_volume"
+        case high24H = "high_24h"
+        case low24H = "low_24h"
+        case priceChange24H = "price_change_24h"
+        case priceChangePercentage24H = "price_change_percentage_24h"
+        case marketCapChange24H = "market_cap_change_24h"
+        case marketCapChangePercentage24H = "market_cap_change_percentage_24h"
+        case circulatingSupply = "circulating_supply"
+        case totalSupply = "total_supply"
+        case maxSupply = "max_supply"
+        case ath
+        case athChangePercentage = "ath_change_percentage"
+        case athDate = "ath_date"
+        case atl
+        case atlChangePercentage = "atl_change_percentage"
+        case atlDate = "atl_date"
+        case lastUpdated = "last_updated"
+        case sparkLineIn7D = "sparkline_in_7d"
+        case priceChangePercentage24HInCurrency = "price_change_percentage_24h_in_currency"
+        case currentHoldings
+    }
+    
+    func updateHoldings(amount: Double) -> CoinModel {
+        return CoinModel(id: <#T##String#>, symbol: <#T##String#>, name: <#T##String#>, image: <#T##String#>, currentPrice: <#T##Double#>, marketCap: <#T##Double?#>, marketCapRank: <#T##Double?#>, fullyDilutedValuation: <#T##Double?#>, totalVolume: <#T##Double?#>, high24H: <#T##Double?#>, low24H: <#T##Double?#>, priceChange24H: <#T##Double?#>, priceChangePercentage24H: <#T##Double?#>, marketCapChange24H: <#T##Double?#>, marketCapChangePercentage24H: <#T##Double?#>, circulatingSupply: <#T##Double?#>, totalSupply: <#T##Double?#>, maxSupply: <#T##Double?#>, ath: <#T##Double?#>, athChangePercentage: <#T##Double?#>, athDate: <#T##String?#>, atl: <#T##Double?#>, atlChangePercentage: <#T##Double?#>, atlDate: <#T##String?#>, lastUpdated: <#T##String?#>, sparkLineIn7D: <#T##SparkLineIn7D?#>, priceChangePercentage24HInCurrency: <#T##Double?#>, currentHoldings: <#T##Double?#>)
+    }
+}
+
+struct SparkLineIn7D: Codable {
+    let price: [Double]?
 }
