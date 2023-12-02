@@ -20,8 +20,7 @@ class CoinDataService {
     
     private func getCoin() {
         
-        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h&locale=en")
-        else { return }
+        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h&locale=en") else { return }
         
         coinSubscription = URLSession.shared.dataTaskPublisher(for: url)
             .subscribe(on: DispatchQueue.global(qos: .default))
@@ -33,7 +32,7 @@ class CoinDataService {
                 return output.data
             }
             .receive(on: DispatchQueue.main)
-            .decode(type: [CoinModel].self, decoder: JSONDecoder())
+            .decode(type: [CoinModel].self , decoder: JSONDecoder())
             .sink { (completion) in
                 switch completion {
                 case .finished:
@@ -41,11 +40,10 @@ class CoinDataService {
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
-            } receiveValue: { [weak self](returnedCoins) in
+            } receiveValue: { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
                 self?.coinSubscription?.cancel()
             }
-            //.store(in: &cancellables)
 
     }
 }
