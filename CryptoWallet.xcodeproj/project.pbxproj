@@ -17,6 +17,8 @@
 		18378DBB2B1CF281007DA6CD /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18378DBA2B1CF281007DA6CD /* Statistics.swift */; };
 		18378DBD2B1CF56C007DA6CD /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18378DBC2B1CF56C007DA6CD /* StatisticsView.swift */; };
 		18378DBF2B1CFE21007DA6CD /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18378DBE2B1CFE21007DA6CD /* HomeStatsView.swift */; };
+		18378DC12B1D1471007DA6CD /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18378DC02B1D1471007DA6CD /* MarketDataModel.swift */; };
+		18378DC32B1D1A3F007DA6CD /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18378DC22B1D1A3F007DA6CD /* MarketDataService.swift */; };
 		1859A5142B1A3D0B00F61DFA /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859A5132B1A3D0B00F61DFA /* CoinRowView.swift */; };
 		1859A5162B1A3EA100F61DFA /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859A5152B1A3EA100F61DFA /* PreviewProvider.swift */; };
 		1859A5182B1A58B300F61DFA /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859A5172B1A58B300F61DFA /* Double.swift */; };
@@ -44,6 +46,8 @@
 		18378DBA2B1CF281007DA6CD /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		18378DBC2B1CF56C007DA6CD /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 		18378DBE2B1CFE21007DA6CD /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		18378DC02B1D1471007DA6CD /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
+		18378DC22B1D1A3F007DA6CD /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		1859A5132B1A3D0B00F61DFA /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		1859A5152B1A3EA100F61DFA /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		1859A5172B1A58B300F61DFA /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			children = (
 				18024AAC2B191D2D00882B78 /* CoinModel.swift */,
 				18378DBA2B1CF281007DA6CD /* Statistics.swift */,
+				18378DC02B1D1471007DA6CD /* MarketDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 			children = (
 				180999A32B1B44F400A650B7 /* CoinDataService.swift */,
 				18680D052B1BDCA600ACF454 /* CoinImageService.swift */,
+				18378DC22B1D1A3F007DA6CD /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				18680D022B1BCF4700ACF454 /* NetworkManager.swift in Sources */,
 				18378DB52B1CC89B007DA6CD /* LocalFileManager.swift in Sources */,
 				1865995B2B166B2000EBC40B /* ContentView.swift in Sources */,
+				18378DC12B1D1471007DA6CD /* MarketDataModel.swift in Sources */,
 				18680D042B1BD99100ACF454 /* CoinImageView.swift in Sources */,
 				186599702B167FF800EBC40B /* HomeView.swift in Sources */,
 				18378DB92B1CE435007DA6CD /* UIApplication.swift in Sources */,
@@ -285,6 +292,7 @@
 				18024AAA2B19187F00882B78 /* CircleButtonAnimation.swift in Sources */,
 				1865996A2B167A6A00EBC40B /* Color.swift in Sources */,
 				18378DBF2B1CFE21007DA6CD /* HomeStatsView.swift in Sources */,
+				18378DC32B1D1A3F007DA6CD /* MarketDataService.swift in Sources */,
 				18680D082B1BDF6800ACF454 /* CoinImageViewModel.swift in Sources */,
 				1859A5162B1A3EA100F61DFA /* PreviewProvider.swift in Sources */,
 				1859A5182B1A58B300F61DFA /* Double.swift in Sources */,
