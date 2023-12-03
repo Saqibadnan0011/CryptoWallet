@@ -16,7 +16,7 @@ import Foundation
      "symbol": "btc",
      "name": "Bitcoin",
      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
-     "c": 37792,
+     "current_price": 37792,
      "market_cap": 739082829935,
      "market_cap_rank": 1,
      "fully_diluted_valuation": 793604924280,
@@ -70,7 +70,7 @@ struct CoinModel: Identifiable, Codable {
     
     enum CodingKeys: String, CodingKey {
         case id, symbol, name, image
-        case currentPrice = "currentPrice"
+        case currentPrice = "current_price"
         case marketCap = "market_cap"
         case marketCapRank = "market_cap_rank"
         case fullyDilutedValuation = "fully_diluted_valuation"
