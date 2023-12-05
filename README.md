@@ -1,4 +1,5 @@
-<img width="745" alt="Screenshot 2023-12-02 at 3 38 01 PM" src="https://github.com/underwoodbrady/flutter-ble-snowcounter/assets/79377722/17a20de6-835d-49b2-ba50-ede2e4d12c61">
+<h1>CryptoWallet: IOS Cryptocurrency App</h1>
+
+<img align="center" width="339" alt="logo" src="https://github.com/Saqibadnan0011/techLord.github.io/assets/79377722/eb0a24c3-a929-47ad-8d5d-7e9ba99ebca2">
 <p>Project assign by CodeAlpha Company (Internship)</p>
-<h1>Crypto Wallet</h1>
  
