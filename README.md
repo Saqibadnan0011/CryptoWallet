@@ -7,12 +7,6 @@
  
 <p>CryptoWallet, is a swift library and IOS app to watch prices and check your realtime account balance across multiple cryptocurrencies exchange.Show the different type of coins and their graph according to the current market prices and currencies.Working on more effectable functionalities.</p>
 
-<h2>Table of Content</h2>
-
-
-
-
-
 
 <h4>Light and Dark mode Preferences</h4>
 
