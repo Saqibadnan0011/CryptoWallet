@@ -1,5 +1,4 @@
 <h1>CryptoWallet: IOS Cryptocurrency App</h1>
-<p>Project assign by CodeAlpha Company (Internship)</p>
 
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-brightgreen.svg)
 
