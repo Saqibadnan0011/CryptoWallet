@@ -4,7 +4,7 @@
 
 <img align="center" width="339" alt="logo" src="https://github.com/Saqibadnan0011/techLord.github.io/assets/79377722/eb0a24c3-a929-47ad-8d5d-7e9ba99ebca2">
  
-<p>CryptoWallet, is 4 library and IOS app to watch prices and check your realtime account balance across multiple cryptocurrencies exchange.Show the different type of coins and their graph according to the current market prices and currencies.Working on more effectable functionalities.</p>
+<p>CryptoWallet, is 5 library and IOS app to watch prices and check your realtime account balance across multiple cryptocurrencies exchange.Show the different type of coins and their graph according to the current market prices and currencies.Working on more effectable functionalities.</p>
 
 
 <h4>Light and Dark mode Preferences</h4>
